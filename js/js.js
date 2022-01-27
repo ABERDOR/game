@@ -6,8 +6,6 @@ request.send();
 
 
 request.onload = function() {
-	var name=document.getElementById('name');
-	name.innerHTML='123';
   var superHeroes = request.response;
   showname(superHeroes);
   showlevel(superHeroes);
