@@ -7,13 +7,14 @@ request.send();
 
 request.onload = function() {
   var res = request.response;
-console.log(res);
+  console.log(request);
+  console.log(res);
   var obj = JSON.parse(res);
   showname(obj);
   //showlevel(superHeroes);
 }
 function showname(obj){
-	console.log(obj);
+	//console.log(obj);
 	var name=document.getElementById('name');
 	var name1=document.getElementById('name1');
 	var name2=document.getElementById('name2');
