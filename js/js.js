@@ -1,4 +1,4 @@
-alert('123')
+//alert('123')
 
 url = 'json/js.json';
 
