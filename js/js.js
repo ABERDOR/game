@@ -12,8 +12,10 @@ request.onload = function() {
   //showlevel(superHeroes);
 }
 function showname(obj){
+	console.log(obj);
 	var name=document.getElementById('name');
 	var name1=document.getElementById('name1');
 	name.innerHTML='123';
 	name1.innerHTML=obj.san;
+	
 }
