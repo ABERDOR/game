@@ -7,6 +7,7 @@ fetch(url, {})
   console.log(respnose);
   return response.json(); 
 }).then((jsonData) => {
+  showname(jsonData);
   console.log(jsonData);
 }).catch((err) => {
   console.log('錯誤:', err);
