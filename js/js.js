@@ -1,4 +1,4 @@
-alert('123')
+//alert('123')
 const request= new XMLHttpRequest();
 request.open('GET','json/js.json',true);
 request.responseType = 'json';
