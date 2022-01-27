@@ -4,6 +4,7 @@ url = 'json/js.json';
 
 fetch(url, {})
 .then((response) => {
+  console.log(respnose);
   return response.json(); 
 }).then((jsonData) => {
   console.log(jsonData);
