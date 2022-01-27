@@ -7,6 +7,7 @@ request.send();
 
 request.onload = function() {
   var res = request.response;
+console.log(res);
   var obj = JSON.parse(res);
   showname(obj);
   //showlevel(superHeroes);
