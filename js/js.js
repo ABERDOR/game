@@ -6,13 +6,14 @@ request.send();
 
 
 request.onload = function() {
-  var superHeroes = request.response;
-  showname(superHeroes);
+  var res = request.response;
+  var obj = JSON.parse(res);
+  showname(obj);
   //showlevel(superHeroes);
 }
-function showname(res){
+function showname(obj){
 	var name=document.getElementById('name');
 	var name1=document.getElementById('name1');
 	name.innerHTML='123';
-	name1.innerHTML=res['san'];
+	name1.innerHTML=obj.san;
 }
