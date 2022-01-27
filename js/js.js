@@ -8,7 +8,7 @@ request.send();
 request.onload = function() {
   var superHeroes = request.response;
   showname(superHeroes);
-  showlevel(superHeroes);
+  //showlevel(superHeroes);
 }
 function showname(res){
 	var name=document.getElementById('name');
