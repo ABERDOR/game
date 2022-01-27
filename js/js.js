@@ -14,7 +14,7 @@ request.onload = function() {
 }
 function showname(res){
 	var name=document.getElementById('name');
-	var name=document.getElementById('name1');
+	var name1=document.getElementById('name1');
 	name.innerHTML='123';
 	name1.innerHTML=res['san'];
 }
