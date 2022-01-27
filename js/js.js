@@ -6,7 +6,7 @@ request.send();
 
 
 request.onload = function() {
-	var name=document.getelementById('name');
+	var name=document.getElementById('name');
 	name.innerHTML='123';
   var superHeroes = request.response;
   showname(superHeroes);
