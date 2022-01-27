@@ -6,12 +6,14 @@ request.send();
 
 
 request.onload = function() {
-  var res = request.response;
-  console.log(request);
-  console.log(res);
-  var obj = JSON.parse(res);
-  showname(obj);
-  //showlevel(superHeroes);
+	var res = request.response;
+	var text = this.responseText;
+	console.log(text);
+	console.log(request);
+	console.log(res);
+	var obj = JSON.parse(res);
+	showname(obj);
+	//showlevel(superHeroes);
 }
 function showname(obj){
 	//console.log(obj);
