@@ -1,6 +1,6 @@
 alert('123')
 const request= new XMLHttpRequest();
-request.open('GET','https://github.com/ABERDOR/game/blob/main/js/js.js',true);
+request.open('GET','https://github.com/ABERDOR/game/blob/main/json/js.json',true);
 request.responseType = 'json';
 request.send();
 
