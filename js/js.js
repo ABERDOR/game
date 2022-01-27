@@ -1,10 +1,21 @@
 //alert('123')
+
+url = 'json/js.json';
+
+fetch(url, {
+  method: 'POST'
+}).then((response) => {
+    return response.json(); 
+  }).then((jsonData) => {
+    console.log(jsonData);
+  }).catch((err) => {
+    console.log('錯誤:', err);
+})
+/*
 const request= new XMLHttpRequest();
 request.open('GET','json/js.json',true);
 request.responseType = 'json';
 request.send();
-
-
 request.onload = function() {
 	var res = request.response;
 	//var text = this.responseText;
@@ -15,6 +26,7 @@ request.onload = function() {
 	showname(obj);
 	//showlevel(superHeroes);
 }
+*/
 function showname(obj){
 	//console.log(obj);
 	var name=document.getElementById('name');
