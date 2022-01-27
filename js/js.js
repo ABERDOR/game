@@ -8,7 +8,7 @@ request.send();
 request.onload = function() {
 	var res = request.response;
 	//var text = this.responseText;
-	console.log(tthis);
+	console.log(this);
 	console.log(request);
 	console.log(res);
 	var obj = JSON.parse(res);
