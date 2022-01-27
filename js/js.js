@@ -20,7 +20,7 @@ function showname(obj){
 	var name=document.getElementById('name');
 	var name1=document.getElementById('name1');
 	var name2=document.getElementById('name2');
-	name.innerHTML='121113';
+	name.innerHTML='13';
 	name1.innerHTML=obj.san;
 	name2.innerHTML=obj['數值']['san'];
 	
