@@ -50,9 +50,9 @@ function show(obj){
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	for (skSP in obj['skillSP']){
 		//console.log(skSP);
-		ch.innerHTML+='<div title=\"'+obj['skillSP'][skSP]+'\">'
+		ch.innerHTML+='<span title=\"'+obj['skillSP'][skSP]+'\">'
 			+skSP
-			+"</div>";
+			+"</span>";
 	}
 	for (va in obj['value']){
 		//console.log(va);
