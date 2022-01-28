@@ -82,9 +82,9 @@ function show(obj){
 	}
 		
 	for (st in obj['status']){
-		ch.innerHTML+='<span class=\"unget\" onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\" value=\"'+obj['status'][st]+'\">'
+		ch.innerHTML+='<button class=\"unget\" onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\" value=\"'+obj['status'][st]+'\">'
 			+st
-			+'</span>';
+			+'</button>';
 	}
 	}
 }
