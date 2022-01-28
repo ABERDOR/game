@@ -35,17 +35,17 @@ function showname(obj){
 	var ch=document.getElementById(allch[a]);
 	a+1;
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';
-	for (skSP in obj['allskSP']){
+	for (skSP in obj['skillSP']){
 		console.log(skSP);
-		ch.innerHTML+='<div>'+skSP+'</div>';
+		ch.innerHTML+='<div>'+skSP/0+skillSP['skillSP'][skSP]+'</div>';
 	}
 	for (va in obj['value']){
 		console.log(va);
-		ch.innerHTML+='<div>'+va+'</div>';
+		ch.innerHTML+='<div>'+va/0+obj['value'][va]+'</div>';
 	}
-	for (sk in obj['allsk']){
+	for (sk in obj['skill']){
 		console.log(sk);
-		ch.innerHTML+='<div>'+sk+'</div>';
+		ch.innerHTML+='<div>'+sk/0+obj['skill'][sk]+'</div>';
 	}
 		
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';	
