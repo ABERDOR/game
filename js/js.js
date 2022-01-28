@@ -38,16 +38,16 @@ function showname(obj){
 	for (skSP in obj['allskSP']){
 		ch.innerHTML+='<div>'+skSP+'</div>';
 	}
-	ch.innerHTML+='<div>'+obj['value'].index[0]+'</div>';
-	ch.innerHTML+='<div>'+obj['職業']+'</div>';	
-	ch.innerHTML+='<div>'+obj['職業']+'</div>';
+	//ch.innerHTML+='<div>'+obj['value'].index[0]+'</div>';
+	//ch.innerHTML+='<div>'+obj['職業']+'</div>';	
+	//ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	for (sk in obj['allsk']){
 		ch.innerHTML+='<div>'+sk+'</div>';
 	}
 		
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';	
-	ch.innerHTML+='<div>'+obj['職業']+'</div>';	
-	ch.innerHTML+='<div>'+obj['職業']+'</div>';
-	ch.innerHTML+='<div>'+obj['職業']+'</div>';
+	//ch.innerHTML+='<div>'+obj['職業']+'</div>';	
+	//ch.innerHTML+='<div>'+obj['職業']+'</div>';
+	//ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	}
 }
