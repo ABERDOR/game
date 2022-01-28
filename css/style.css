@@ -3,3 +3,4 @@ ul{display:flex;flex-wrap: wrap;list-style-type: none;}
 ul li{width:40%;padding:5px;margin:5px;background-color: DodgerBlue;}
 .get{color:red;background:blue}
 .unget{color:green;background:lightblue}
+span{padding:3px;margin:2px}
