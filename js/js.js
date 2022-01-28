@@ -75,9 +75,11 @@ function show(obj){
 		//console.log(sk);
 		ch.innerHTML+='<div title=\"'+obj['skillEX'][sk]+'\">'
 			+sk
+			+reduce
 			+'<a>'
 			+obj['skill'][sk]
 			+'</a>'
+			+add
 			+'</div>';
 	}
 		
