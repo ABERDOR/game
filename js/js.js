@@ -38,14 +38,8 @@ function reducef(self){
 	num.innerHTML--;
 }
 function change(self){
-	if(self.classList.contains('unget')){
-	console.log('2');
 	self.classList.toggle('get');
-	}
-	else{
-	console.log('3');
 	self.classList.toggle('unget');
-	}
 }
 function show(obj){
 	if(a<4 && obj!=null){
