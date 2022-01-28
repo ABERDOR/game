@@ -1,7 +1,7 @@
 //alert('123')
 
 url = 'json/js.json';
-
+/*
 fetch(url, {})
 .then((response) => {
   //console.log(response);
@@ -12,6 +12,7 @@ fetch(url, {})
 }).catch((err) => {
   console.log('錯誤:', err);
 })
+*/
 var add = '<button onclick=\"addf(this)\">+</button>';
 var reduce = '<button onclick=\"reducef(this)\">-</button>';
 var allch = ['ch0','ch1','ch2','ch3'];
