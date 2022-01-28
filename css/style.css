@@ -1,6 +1,6 @@
 /*.test{color: blue;padding: 100px;}*/
 ul{display:flex;flex-wrap: wrap;list-style-type: none;}
-ul li{width:40%;padding:3px;margin:2px;background-color: DodgerBlue;}
+ul li{width:45%;padding:3px;margin:2px;background-color: DodgerBlue;}
 /*div{padding:1px;margin:1px}*/
 button{/*padding:1px;margin:1px;*/border-radius:5px}
 a{padding:1px 2px 1px;}
