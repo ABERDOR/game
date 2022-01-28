@@ -31,12 +31,12 @@ function addch(){
 }
 function addf(self){
 	var num = self.previousSibling;
-	num.value=int(num.value)+int(1);
+	num.value++;
 	num.innerHTML=num.value;
 }
 function reducef(self){
 	var num = self.nextSibling;
-	num.value=int(num.value)-int(1);
+	num.value--;
 	num.innerHTML=num.value;
 }
 function show(obj){
