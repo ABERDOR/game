@@ -39,6 +39,7 @@ function reducef(self){
 }
 function change(self){
 	console.log('1');
+	console.log(self);
 	if(self.value){
 	console.log('2');
 	self.value=false;
