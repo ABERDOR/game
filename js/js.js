@@ -38,12 +38,14 @@ function reducef(self){
 	num.innerHTML--;
 }
 function change(self){
-	var sta=self;
+	console.log('1');
 	if(self.value){
+	console.log('2');
 	self.value=false;
 	self.class='unget';
 	}
 	else{
+	console.log('3');
 	self.value=true;
 	self.class='get';
 	}
