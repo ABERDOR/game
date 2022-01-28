@@ -84,7 +84,7 @@ function show(obj){
 	}
 		
 	for (st in obj['status']){
-		ch.innerHTML+='<span onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\" value=\"'+obj['status'][st]+'\">'
+		ch.innerHTML+='<span class=\"unget\" onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\" value=\"'+obj['status'][st]+'\">'
 			+st
 			+'</span>';
 	}
