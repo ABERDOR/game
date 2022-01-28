@@ -38,7 +38,7 @@ function reducef(){
 function show(obj){
 	if(a<4){
 	var ch=document.getElementById(allch[a]);
-	a+1;
+	a+=1;
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	for (skSP in obj['skillSP']){
 		//console.log(skSP);
