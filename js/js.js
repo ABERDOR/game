@@ -84,3 +84,9 @@ function show(obj){
 	}
 	}
 }
+
+function addth(){
+	var newth=document.getElementById('newth');
+	var allbag=document.getElementById('allthing');
+	allbag.innerHTML+='<div class=\"thing\">'+newth.value+'</div>'
+}
