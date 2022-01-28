@@ -1,4 +1,5 @@
 //alert('123')
+//confirm('你的電腦有100個病毒,請前往 http://google.com 去除病毒。')
 
 url = 'json/js.json';
 /*
@@ -89,4 +90,28 @@ function addth(){
 	var newth=document.getElementById('newth');
 	var allbag=document.getElementById('allthing');
 	allbag.innerHTML+='<div class=\"thing\">'+newth.value+'</div>'
+	var things=document.body.getElementsByClassName("thing");
+	for(var i=0;i<things.length;i++)
+	{
+		things[i].addEventListener("mousedown",drag);
+	}
 }
+function drag(e)
+{
+
+	var it=this;
+	it.style.position="absolute";
+	var move =function(e)
+	{ 
+		it.style.top=e.clientY-5+"px"
+		it.style.left=e.clientX-5+"px"
+	}
+	var end = function(e)
+	{		
+		document.removeEventListener("mousemove",move);
+		document.removeEventListener("mouseend",end)	
+	}
+	document.addEventListener("mousemove",move);
+	document.addEventListener("mouseup",end)
+}
+
