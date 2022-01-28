@@ -16,7 +16,7 @@ var add = '<button onclick=\"addf()\">';
 var reduce = '<button onclick>=\"reducef()\"';
 var allch = ['ch0','ch1','ch2','ch3'];
 var a=0;
-funcyion addch(){
+function addch(){
 	var newch=document.getElementById('newch');
 	fetch(url, {})
 	.then((response) => {
