@@ -28,7 +28,7 @@ request.onload = function() {
 	//showlevel(superHeroes);
 }
 */
-var allch = ['cho','ch1','ch2','ch3'];
+var allch = ['ch0','ch1','ch2','ch3'];
 var a=0;
 function showname(obj){
 	if(a<4){
