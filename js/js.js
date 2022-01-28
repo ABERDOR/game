@@ -77,7 +77,7 @@ function show(obj){
 			+'</div>';
 	}
 		
-	for (st in obj['status']){
+	for (st in obj['statusEX']){
 		ch.innerHTML+='<button class=\"unget\" onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\">'
 			+st
 			+'</button>';
