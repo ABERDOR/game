@@ -101,6 +101,9 @@ function drag(e)
 
 	var it=this;
 	it.style.position="absolute";
+	if (it.style.top<=20){
+		it.remove();
+	}
 	var move =function(e)
 	{ 
 		it.style.top=e.clientY-5+"px"
