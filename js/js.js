@@ -45,7 +45,7 @@ function change(self){
 	}
 	else{
 	self.value=true;
-	self.value='get';
+	self.class='get';
 	}
 }
 function show(obj){
