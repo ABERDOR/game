@@ -38,18 +38,13 @@ function reducef(self){
 	num.innerHTML--;
 }
 function change(self){
-	console.log('1');
-	console.log(self);
-	console.log(self.value);
-	if(self.value){
+	if(self.classList.contains('unget')){
 	console.log('2');
-	self.value=false;
-	self.class='unget';
+	self.classList.toggle('get');
 	}
 	else{
 	console.log('3');
-	self.value=true;
-	self.class='get';
+	self.classList.toggle('unget');
 	}
 }
 function show(obj){
@@ -88,7 +83,7 @@ function show(obj){
 	}
 		
 	for (st in obj['status']){
-		ch.innerHTML+='<button class=\"unget\" onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\" value=\"'+obj['status'][st]+'\">'
+		ch.innerHTML+='<button class=\"unget\" onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\">'
 			+st
 			+'</button>';
 	}
