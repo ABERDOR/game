@@ -12,34 +12,28 @@ fetch(url, {})
 }).catch((err) => {
   console.log('錯誤:', err);
 })
-/*
-const request= new XMLHttpRequest();
-request.open('GET','json/js.json',true);
-request.responseType = 'json';
-request.send();
-request.onload = function() {
-	var res = request.response;
-	//var text = this.responseText;
-	console.log(this);
-	console.log(request);
-	console.log(res);
-	var obj = JSON.parse(res);
-	showname(obj);
-	//showlevel(superHeroes);
-}
-*/
 var add = '<button onclick=\"addf()\">';
 var reduce = '<button onclick>=\"reducef()\"';
 var allch = ['ch0','ch1','ch2','ch3'];
 var a=0;
+funcyion addch(){
+	var newch=document.getElementById('newch');
+	fetch(url, {})
+	.then((response) => {
+	  //console.log(response);
+	  return response.json(); 
+	}).then((jsonData) => {
+	  show(jsonData[newch.value]);
+	  //console.log(jsonData);
+	}).catch((err) => {
+	  console.log('錯誤:', err);
+	})
+}
 function addf(){
 	
-
-
 }
 function reducef(){
-
-
+	
 }
 function show(obj){
 	if(a<4){
