@@ -37,7 +37,7 @@ function showname(obj){
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	for (skSP in obj['skillSP']){
 		//console.log(skSP);
-		ch.innerHTML+='<div>'+skSP+obj['skillSP'][skSP]+'</div>';
+		ch.innerHTML+='<div title=\"'+obj['skillSP'][skSP]+'\">'+skSP+"</div>";
 	}
 	for (va in obj['value']){
 		//console.log(va);
@@ -45,7 +45,7 @@ function showname(obj){
 	}
 	for (sk in obj['skill']){
 		//console.log(sk);
-		ch.innerHTML+='<div>'+sk+obj['skill'][sk]+'</div>';
+		ch.innerHTML+='<div title=\"'obj['skillEX'][sk]+'\">'+sk+obj['skill'][sk]+'</div>';
 	}
 		
 	//ch.innerHTML+='<div>'+obj['職業']+'</div>';	
