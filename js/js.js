@@ -40,7 +40,7 @@ function reducef(){
 	num.innerHTML=num.value;
 }
 function show(obj){
-	if(a<4){
+	if(a<4 && obj!=null){
 	var ch=document.getElementById(allch[a]);
 	a+=1;
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';
