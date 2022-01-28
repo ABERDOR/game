@@ -13,7 +13,7 @@ fetch(url, {})
   console.log('錯誤:', err);
 })
 var add = '<button onclick=\"addf(this)\">+<//button>';
-var reduce = '<button onclick>=\"reducef(this)\">-<//button>';
+var reduce = '<button onclick=\"reducef(this)\">-<//button>';
 var allch = ['ch0','ch1','ch2','ch3'];
 var a=0;
 function addch(){
@@ -31,12 +31,12 @@ function addch(){
 }
 function addf(self){
 	var num = self.previousSibling;
-	num.value+=1;
+	num.value=int(num.value)+int(1);
 	num.innerHTML=num.value;
 }
 function reducef(self){
 	var num = self.nextSibling;
-	num.value-=1;
+	num.value=int(num.value)-int(1);
 	num.innerHTML=num.value;
 }
 function show(obj){
