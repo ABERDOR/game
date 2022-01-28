@@ -56,18 +56,18 @@ function show(obj){
 		//console.log(va);
 		ch.innerHTML+='<div>'
 			+va
-			+<a>
+			+'<a>'
 			+obj['value'][va]
-			+</a>
+			+'</a>'
 			+'</div>';
 	}
 	for (sk in obj['skill']){
 		//console.log(sk);
 		ch.innerHTML+='<div title=\"'+obj['skillEX'][sk]+'\">'
 			+sk
-			+<a>
+			+'<a>'
 			+obj['skill'][sk]
-			+</a>
+			+'</a>'
 			+'</div>';
 	}
 		
