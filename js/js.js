@@ -39,6 +39,12 @@ function reducef(self){
 	num.value--;
 	num.innerHTML=num.value;
 }
+function change(self){
+	var sta=self;
+	if(){
+	
+	}
+}
 function show(obj){
 	if(a<4 && obj!=null){
 	var ch=document.getElementById(allch[a]);
@@ -72,9 +78,10 @@ function show(obj){
 			+'</div>';
 	}
 		
-	//ch.innerHTML+='<div>'+obj['職業']+'</div>';	
-	//ch.innerHTML+='<div>'+obj['職業']+'</div>';	
-	//ch.innerHTML+='<div>'+obj['職業']+'</div>';
-	//ch.innerHTML+='<div>'+obj['職業']+'</div>';
+	for (st in obj['status']){
+		ch.innerHTML+='<span onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\">'
+			+st
+			+'</span>';
+	}
 	}
 }
