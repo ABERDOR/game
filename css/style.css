@@ -1,4 +1,5 @@
 /*.test{color: blue;padding: 100px;}*/
+body{background:lightgreen}
 ul{display:flex;flex-wrap: wrap;list-style-type: none;}
 ul li{width:47%;padding:3px;margin:2px;background-color: DodgerBlue;}
 div{padding:0px 2px 1px;margin:0px 2px 1px;}
