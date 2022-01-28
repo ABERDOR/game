@@ -12,8 +12,8 @@ fetch(url, {})
 }).catch((err) => {
   console.log('錯誤:', err);
 })
-var add = '<button onclick=\"addf()\">+<//button>';
-var reduce = '<button onclick>=\"reducef()\">-<//button>';
+var add = '<button onclick=\"addf(this)\">+<//button>';
+var reduce = '<button onclick>=\"reducef(this)\">-<//button>';
 var allch = ['ch0','ch1','ch2','ch3'];
 var a=0;
 function addch(){
@@ -29,13 +29,13 @@ function addch(){
 	  console.log('錯誤:', err);
 	})
 }
-function addf(){
-	var num = document.getElementById('ad').previousSibling;
+function addf(self){
+	var num = self.previousSibling;
 	num.value+=1;
 	num.innerHTML=num.value;
 }
-function reducef(){
-	var num = document.getElementById('red').nextSibling;
+function reducef(self){
+	var num = self.nextSibling;
 	num.value-=1;
 	num.innerHTML=num.value;
 }
