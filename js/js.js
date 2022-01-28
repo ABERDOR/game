@@ -36,12 +36,14 @@ function showname(obj){
 	a+1;
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	for (skSP in obj['allskSP']){
+		console.log(skSP);
 		ch.innerHTML+='<div>'+skSP+'</div>';
 	}
 	//ch.innerHTML+='<div>'+obj['value'].index[0]+'</div>';
 	//ch.innerHTML+='<div>'+obj['職業']+'</div>';	
 	//ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	for (sk in obj['allsk']){
+		console.log(sk);
 		ch.innerHTML+='<div>'+sk+'</div>';
 	}
 		
