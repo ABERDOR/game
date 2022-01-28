@@ -30,10 +30,14 @@ function addch(){
 	})
 }
 function addf(){
-	
+	var num = document.getElementById('ad').previousSibling;
+	num.value+=1;
+	num.innerHTML=num.value;
 }
 function reducef(){
-	
+	var num = document.getElementById('red').nextSibling;
+	num.value-=1;
+	num.innerHTML=num.value;
 }
 function show(obj){
 	if(a<4){
@@ -50,9 +54,11 @@ function show(obj){
 		//console.log(va);
 		ch.innerHTML+='<div>'
 			+va
+			+reduce
 			+'<a>'
 			+obj['value'][va]
 			+'</a>'
+			+add
 			+'</div>';
 	}
 	for (sk in obj['skill']){
