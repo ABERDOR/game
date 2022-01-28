@@ -42,7 +42,7 @@ function reducef(self){
 function change(self){
 	var sta=self;
 	if(true){
-	
+	;
 	}
 }
 function show(obj){
