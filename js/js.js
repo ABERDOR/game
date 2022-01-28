@@ -41,8 +41,13 @@ function reducef(self){
 }
 function change(self){
 	var sta=self;
-	if(true){
-	;
+	if(self.value){
+	self.value=false;
+	self.class='unget';
+	}
+	else{
+	self.value=true;
+	self.value='get';
 	}
 }
 function show(obj){
@@ -79,7 +84,7 @@ function show(obj){
 	}
 		
 	for (st in obj['status']){
-		ch.innerHTML+='<span onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\">'
+		ch.innerHTML+='<span onclick=\"change(this)\" title=\"'+obj['statusEX'][st]+'\" value=\"'+obj['status'][st]+'\">'
 			+st
 			+'</span>';
 	}
