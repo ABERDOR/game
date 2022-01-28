@@ -43,6 +43,7 @@ function show(obj){
 	if(a<4 && obj!=null){
 	var ch=document.getElementById(allch[a]);
 	a+=1;
+	ch.innerHTML+='';
 	ch.innerHTML+='<div>'+obj['職業']+'</div>';
 	for (skSP in obj['skillSP']){
 		//console.log(skSP);
