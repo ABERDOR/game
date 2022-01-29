@@ -89,7 +89,7 @@ function show(obj){
 function addth(){
 	var newth=document.getElementById('newth');
 	var allbag=document.getElementById('allthing');
-	allbag.innerHTML+='<div class=\"thing\">'+newth.value+'</div>'
+	allbag.innerHTML+='<span class=\"thing\">'+newth.value+'</span>'
 	var things=document.body.getElementsByClassName("thing");
 	for(var i=0;i<things.length;i++)
 	{
