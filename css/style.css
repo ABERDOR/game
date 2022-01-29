@@ -7,4 +7,4 @@ button{padding:0px 2px 1px;margin:0px 2px 1px;border-radius:5px}
 a{padding:1px 2px 1px;}
 .get{color:red;background:blue}
 .unget{color:green;background:lightblue}
-.thing{background:pink;}
+.thing{background:pink;position:absolute;}
