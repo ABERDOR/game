@@ -2,7 +2,7 @@
 body{background:lightgreen}
 ul{display:flex;flex-wrap: wrap;list-style-type: none;}
 ul li{width:47%;padding:3px;margin:2px;background-color: DodgerBlue;}
-div{padding:0px 2px 1px;margin:0px 2px 1px;}
+div{padding:0px 2px 1px;margin:0px 2px 0px;}
 input{border-radius:5px;}
 button{padding:0px 2px 1px;margin:0px 2px 1px;border-radius:5px}
 a{padding:1px 2px 1px;}
